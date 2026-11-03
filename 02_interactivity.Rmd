@@ -1,0 +1,105 @@
+---
+title: "plotly_and_flexdashboard"
+output: html_document
+date: "2026-11-03"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+
+data(nyc_airbnb)
+
+nyc_airbnb = 
+  nyc_airbnb |> 
+  mutate(rating = review_scores_location / 2) |>
+  select(
+    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) |>
+  filter(
+    !is.na(rating), 
+    neighbourhood_group == "Manhattan",
+    room_type == "Entire home/apt",
+    price %in% 100:500)
+```
+
+## Plotly Scatterplot
+
+```{r}
+
+# The pipeline belwo plots location (latitude and longitude) of the rentals in the given dataset, mapping `price` to color.
+
+# A new variable, `text_label`, is defined and mapped to text.
+
+# The type of plot is `scatter`, which has several modes:
+# `markers` produces the same kind of plot as `ggplot::geom_point`
+# `lines` produces the same kind of point as `ggplot::geom_line`
+
+nyc_airbnb |>
+  mutate(text_label = str_c("Price: $", price, "\nRating: ", rating)) |> 
+  plot_ly(
+    x = ~lat, y = ~long, type = "scatter", mode = "markers",
+    color = ~price, text = ~text_label, alpha = 0.5)
+```
+
+## Plotly Boxplot
+
+```{r}
+
+# The process for creating the boxplot is similar to above: define the dataset, specify the mappings, pick a plot type. Here the type is `box`, and there aren’t modes to choose from.
+
+nyc_airbnb |> 
+  mutate(neighbourhood = fct_reorder(neighbourhood, price)) |> 
+  plot_ly(y = ~price, color = ~neighbourhood, type = "box", colors = "viridis")
+```
+
+## Plotly Barchart
+
+```{r}
+
+# Plotly expects data in a specific format for bar charts, so we use `count` to get the number of rentals in each neighborhood (i.e. to get the bar height).
+
+nyc_airbnb |> 
+  count(neighbourhood) |> 
+  mutate(neighbourhood = fct_reorder(neighbourhood, n)) |> 
+  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar", colors = "viridis")
+```
+
+## `ggplotly`
+
+```{r}
+
+# You can convert a `ggplot` object straight to an interactive graphic using `ggplotly`. For example, the code below recreates our scatterplot using `ggplot` followed by `ggplotly`.
+
+scatter_ggplot = 
+  nyc_airbnb |>
+  ggplot(aes(x = lat, y = long, color = price)) +
+  geom_point(alpha = 0.25) +
+  coord_cartesian()
+
+ggplotly(scatter_ggplot)
+
+# To create a more visually appealing interactive plot, use `plot_ly` to build it. `ggplot` was designed with static plots in mind, and the formatting and behavior of `ggplotly` is less visually appealing than `plot_ly`.
+
+box_ggplot = 
+  nyc_airbnb |> 
+  mutate(neighbourhood = fct_reorder(neighbourhood, price)) |> 
+  ggplot(aes(x = neighbourhood, y = price, fill = neighbourhood)) +
+  geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+ggplotly(box_ggplot)
+
+```
+
+## `flexdashboard` and Their Use In Website Building
+
+```{r}
+
+rmarkdown::render("dashboard_template.Rmd", output_format = "flexdashboard::flex_dashboard")
+```
