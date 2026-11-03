@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saint Manu — Traditional Art</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230F0E0B'/%3E%3Crect x='0' y='28' width='32' height='3' fill='%23C8431A'/%3E%3Ctext x='50%25' y='21' text-anchor='middle' font-family='Arial Black%2C sans-serif' font-weight='900' font-size='14' fill='%23F0E8DC' letter-spacing='-0.5'%3ESM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,600;0,800;0,900;1,400&family=Syne:wght@400;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio-style.css">
+<style>
+/* Traditional-specific overrides */
+.trad-works{
+  padding:5rem 3rem 0;
+  background:var(--near-black);
+}
+
+/* Three works displayed as stacked full-bleed panels */
+.trad-item{
+  position:relative;overflow:hidden;cursor:pointer;
+  margin-bottom:3px;
+}
+
+/* Self Portrait — tall portrait ratio */
+.trad-item.portrait{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:85vh;
+}
+.trad-item.portrait .trad-img-wrap{
+  position:relative;overflow:hidden;
+}
+.trad-item.portrait .trad-img-wrap img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:center top;
+  display:block;
+  filter:saturate(.88);
+  transition:transform 1s cubic-bezier(.16,1,.3,1),filter .5s;
+}
+.trad-item.portrait:hover .trad-img-wrap img{
+  transform:scale(1.03);filter:saturate(1);
+}
+.trad-item.portrait .trad-info{
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:4rem 3.5rem;
+  background:var(--near-black);
+  border-left:1px solid var(--rule);
+}
+
+/* Landscape works — full width cinematic */
+.trad-item.landscape{
+  width:100%;
+}
+.trad-item.landscape .trad-img-wrap{
+  position:relative;overflow:hidden;
+}
+.trad-item.landscape .trad-img-wrap img{
+  width:100%;
+  height:65vh;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  filter:saturate(.88);
+  transition:transform 1s cubic-bezier(.16,1,.3,1),filter .5s;
+}
+.trad-item.landscape:hover .trad-img-wrap img{
+  transform:scale(1.02);filter:saturate(1);
+}
+.trad-item.landscape .trad-info{
+  padding:2.5rem 3rem;
+  background:var(--near-black);
+  border-top:1px solid var(--rule);
+  display:flex;justify-content:space-between;align-items:flex-end;
+  gap:3rem;
+}
+
+/* Shared info styles */
+.trad-num{
+  font-family:var(--f-ui);font-weight:700;
+  font-size:.48rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:.75rem;
+  display:flex;align-items:center;gap:.6rem;
+}
+.trad-num::before{content:'';width:16px;height:1px;background:var(--accent);}
+
+.trad-title{
+  font-family:var(--f-display);font-weight:900;
+  font-size:clamp(1.5rem,4vw,4rem);
+  color:var(--paper);line-height:.92;
+  letter-spacing:-.03em;margin-bottom:.75rem;
+}
+.trad-title .out{-webkit-text-stroke:2px var(--paper);color:transparent;}
+
+.trad-meta{
+  font-family:var(--f-serif);font-style:italic;font-weight:300;
+  font-size:clamp(.85rem,1.2vw,1rem);
+  line-height:1.7;color:rgba(240,232,220,.45);
+  max-width:380px;
+}
+.trad-year{
+  font-family:var(--f-ui);font-weight:600;
+  font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(240,232,220,.22);
+  flex-shrink:0;
+  align-self:flex-end;
+}
+.trad-medium{
+  font-family:var(--f-ui);font-weight:600;
+  font-size:.52rem;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(240,232,220,.28);
+  margin-top:.4rem;
+}
+
+/* More coming */
+.trad-more{
+  padding:5rem 3rem;
+  border-top:1px solid var(--rule);
+  display:flex;justify-content:space-between;align-items:center;gap:3rem;
+}
+
+@media(max-width:820px){
+  .trad-works{padding:3rem 0 0;}
+  .trad-item.portrait{grid-template-columns:1fr;}
+  .trad-item.portrait .trad-info{padding:2rem 1.5rem;}
+  .trad-item.portrait .trad-img-wrap{min-height:60vw;}
+  .trad-item.landscape .trad-img-wrap img{height:50vw;}
+  .trad-item.landscape .trad-info{flex-direction:column;gap:1rem;padding:1.75rem 1.5rem;}
+  .trad-more{flex-direction:column;align-items:flex-start;padding:3rem 1.5rem;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html"><div class="nav-dot"></div>Saint Manu</a>
+    <a class="nav-back" href="../index.html#portfolio">Portfolio</a>
+    <ul class="nav-section-links">
+      <li><a href="traditional.html" class="active">Traditional</a></li>
+      <li><a href="digital.html">Digital</a></li>
+      <li><a href="photography.html">Photography</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO — Self Portrait as lead -->
+<section class="port-hero">
+  <div class="hero-img">
+    <img src="works/traditional/self-portrait.jpg" alt="Self Portrait">
+    <div class="hero-img-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <p class="hero-kicker reveal"><span class="hero-kicker-line"></span>Traditional Art · Saint Manu</p>
+      <h1 class="hero-title reveal d1">Traditional</h1>
+      <p class="hero-sub reveal d2">Colored pencil, acrylic, and oil across seven years of practice. Portraiture, surrealism, and the spaces where they meet. A small archive that's waiting to grow again.</p>
+    </div>
+    <div class="hero-right reveal d2">
+      <p class="hero-feat-label">Featured Work</p>
+      <p class="hero-feat-title">Self Portrait</p>
+      <p class="hero-feat-year">2020</p>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<div class="trad-works">
+  <div class="s-label reveal" style="padding:0 3rem;">
+    <span class="s-label-text">3 works · 2017–2020</span>
+    <div class="s-label-rule"></div>
+  </div>
+
+  <!-- 1. Lost In Your Eyes — landscape, close crop -->
+  <div class="trad-item landscape reveal" onclick="openLightbox(0)">
+    <div class="trad-img-wrap">
+      <img src="works/traditional/lost-in-your-eyes.jpg" alt="Lost In Your Eyes">
+    </div>
+    <div class="trad-info">
+      <div>
+        <p class="trad-num">01</p>
+        <h2 class="trad-title">Lost In Your <span class="out">Eyes</span></h2>
+        <p class="trad-medium">Colored pencil on paper</p>
+        <p class="trad-meta">A hyper-realistic close study of an eye — the iris rendered with obsessive detail, the lashes drawn strand by strand. The earliest work in the archive and already a statement about patience and precision.</p>
+      </div>
+      <span class="trad-year">2017</span>
+    </div>
+  </div>
+
+  <!-- 2. Reflections in Real Time — landscape, interior scene -->
+  <div class="trad-item landscape reveal d1" onclick="openLightbox(1)">
+    <div class="trad-img-wrap">
+      <img src="works/traditional/reflections-in-real-time.jpg" alt="Reflections in Real Time">
+    </div>
+    <div class="trad-info">
+      <div>
+        <p class="trad-num">02</p>
+        <h2 class="trad-title">Reflections in <span class="out">Real</span> Time</h2>
+        <p class="trad-medium">Acrylic on canvas</p>
+        <p class="trad-meta">A self-portrait in a bedroom — record covers on a blue wall, a figure in the half-dark. The room as autobiography: what we surround ourselves with as a record of who we are.</p>
+      </div>
+      <span class="trad-year">2020</span>
+    </div>
+  </div>
+
+  <!-- 3. Self Portrait — portrait orientation, split layout -->
+  <div class="trad-item portrait reveal d2" onclick="openLightbox(2)">
+    <div class="trad-img-wrap">
+      <img src="works/traditional/self-portrait.jpg" alt="Self Portrait">
+    </div>
+    <div class="trad-info">
+      <p class="trad-num">03</p>
+      <h2 class="trad-title">Self <span class="out">Portrait</span></h2>
+      <p class="trad-medium">Colored pencil on paper</p>
+      <p class="trad-meta">Planets, sunflowers, a third eye, and the Puerto Rican flag painted on the lips. A surrealist self-portrait that layers identity, diaspora, and the cosmos — made in the same year as the pandemic stilled everything. The most personal piece in the archive.</p>
+      <p class="trad-year" style="margin-top:2rem;">2020</p>
+    </div>
+  </div>
+</div>
+
+<!-- MORE COMING -->
+<div class="trad-more reveal">
+  <div>
+    <h2 class="more-headline">More<br><span style="-webkit-text-stroke:2px var(--paper);color:transparent;">Coming.</span></h2>
+    <p class="more-body">Seven years between the first piece and the last. The hands still know what to do — they just need a reason to pick the pencil back up. This site might be it.</p>
+  </div>
+  <div style="text-align:right;flex-shrink:0;">
+    <div class="more-num">03</div>
+    <div class="more-label">Works in archive</div>
+  </div>
+</div>
+
+<footer class="port-footer">
+  <nav class="port-footer-nav">
+    <a href="../index.html">Home</a>
+    <a href="digital.html">Digital Design</a>
+    <a href="photography.html">Photography</a>
+  </nav>
+  <span class="port-footer-fine">© 2025 Saint Manu</span>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
+  <div class="lightbox-inner" style="max-width:min(800px,92vw);">
+    <button class="lightbox-close" onclick="closeLightbox()">✕ Close</button>
+    <button class="lightbox-nav lightbox-prev" onclick="shiftLightbox(-1)">←</button>
+    <button class="lightbox-nav lightbox-next" onclick="shiftLightbox(1)">→</button>
+    <img class="lightbox-img" id="lb-img" src="" alt="">
+    <div class="lightbox-meta">
+      <span class="lightbox-title" id="lb-title"></span>
+      <span class="lightbox-year" id="lb-year"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('up');});},{threshold:.06,rootMargin:'0px 0px -24px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+const works=[
+  {src:'works/traditional/lost-in-your-eyes.jpg',title:'Lost In Your Eyes',year:'2017'},
+  {src:'works/traditional/reflections-in-real-time.jpg',title:'Reflections in Real Time',year:'2020'},
+  {src:'works/traditional/self-portrait.jpg',title:'Self Portrait',year:'2020'},
+];
+let current=0;
+function openLightbox(i){current=i;document.getElementById('lb-img').src=works[i].src;document.getElementById('lb-title').textContent=works[i].title;document.getElementById('lb-year').textContent=works[i].year;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
+function shiftLightbox(dir){current=(current+dir+works.length)%works.length;openLightbox(current);}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();if(e.key==='ArrowRight')shiftLightbox(1);if(e.key==='ArrowLeft')shiftLightbox(-1);});
+document.querySelector('.port-hero').addEventListener('click',()=>openLightbox(2));
+document.querySelector('.port-hero').style.cursor='pointer';
+</script>
+</body>
+</html>
