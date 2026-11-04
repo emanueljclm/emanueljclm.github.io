@@ -6,8 +6,6 @@ navbar:
   left: 
     - text: "Resume"
       href: resume.html
-    - tex: "Dashboard"
-      href: dashboard.html
     - text: "Saint Manu"
       href: saint_manu/index.html
   right:
@@ -15,7 +13,7 @@ navbar:
       href: mailto:emanueljoclemente@gmail.com
     - icon: fa-github fa-lg
       href: https://github.com/emanueljclm/
-    - icon: fa-linkedin
+    - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/emanuelclemente/
 output:
   html_document:

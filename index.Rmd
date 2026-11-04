@@ -1,4 +1,4 @@
 ::: {.hero}
 # Emanuel Clemente
-[MPH Candidate · Sociomedical Sciences · Columbia Mailman]{.eyebrow}
+
 :::
