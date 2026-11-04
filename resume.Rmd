@@ -3,6 +3,49 @@ title: "Academic Work and Experience"
 ---
 ::: {.resume}
 
+## Research Projects
+
+:::: {.projects}
+::: {.project}
+![Analysis of harm reduction service deserts across New York State counties](images/projects/service_deserts_map.jpg){.project-thumb}
+[Spatial Analysis · Mar 2026]{.project-meta}
+
+### Identifying Service Deserts at the Intersection of Incarceration & Substance Use Risk
+
+Do New York State counties with higher incarceration and overdose mortality have less geographic access to harm reduction services? Using county-level data from 2019 to 2023, I mapped overdose mortality, jail populations, and distance to the nearest syringe service or opioid treatment program in R, combining bivariate and trivariate choropleth maps with spatial statistics. I found that 40 of New York’s 62 counties have no identified syringe service or opioid treatment program, with the most critical service deserts concentrated in rural upstate communities.
+
+[Columbia Mailman, Department of Environmental Health Sciences]{.project-source}
+:::
+
+::: {.project}
+::: {.browser-frame}
+[![Homepage of the Policy as Medicine web hub](images/projects/pam_website.jpg){.project-thumb}](https://pam-nyc.netlify.app/)
+:::
+
+[Online Web Resource · Apr 2026]{.project-meta}
+
+### The “Policy as Medicine” Web Hub: A Social Justice Resource for Clinicians Servicing Immigrant Populations in New York City
+
+As immigration enforcement shifts, clinicians caring for undocumented, mixed-status, and asylum-seeking patients need to know both their own obligations and their patients’ rights. With two colleagues, I co-created Policy as Medicine for a health messaging competition: a single web platform that compiles medical-legal resources for New York City clinicians, from ICE response protocols and patient protections under EMTALA and HIPAA to coverage programs, legal referrals, and a weekly policy tracker. The hub also offers downloadable pocket cards summarizing clinicians’ obligations, so providers can advocate for immigrant patients at the point of care.
+
+[Columbia Mailman, Lerner Center for Health Promotion]{.project-source}
+:::
+
+::: {.project}
+![Program Evaluation of the BCC Maternal Health Program](images/projects/aaiuh_bcc_evaluation_poster.jpg){.project-thumb}
+
+[Applied Practice Experience · July 2026]{.project-meta}
+
+### Evaluating the Brooklyn Communities Collaborative (BCC) Maternal Health Program: A Community-Engaged Qualitative Study
+
+How does the Brooklyn Communities Collaborative’s Maternal Health Program shape mothers’ health knowledge, access to care, and well-being? I mentored five high school researchers through a community-engaged qualitative study, guiding them from literature review through focus groups and key informant interviews to thematic analysis and dissemination. The team found that mothers valued continuous, community-based support over fragmented clinical care, while gaps remained in postpartum recovery, C-section care, and mental health support.
+
+[Arthur Ashe Institute for Urban Health, Brooklyn Health Promotion Summer Internship Program]{.project-source}
+
+:::
+
+::::
+
 ## Education
 
 ### Columbia University Mailman School of Public Health
@@ -90,14 +133,6 @@ title: "Academic Work and Experience"
 - Contributed to community-based research across NIMH-funded studies (WAVE-TW; Five Point Initiative EHE Planning Supplement) investigating psychosocial and structural determinants of health disparities, HIV prevention, and resilience 
 - Managed confidential participant records and human-subjects data in REDCap under IRB-approved protocols, ensuring data integrity 
 - Conducted community outreach to recruit sexual and gender minority participants during the 2022 Miami Beach Pride Parade 
-
-## Selected Research & Presentations
-
-- **Clemente, E.** (2026). Identifying service deserts at the intersection of incarceration & substance use risk. Columbia University Mailman School of Public Health, Department of Environmental Health Sciences.
-
-- **Clemente, E.**, Quintana Licona, D., & Rajput, A. (2026). The “Policy as Medicine” web hub: A social justice resource for clinicians servicing immigrant populations in New York City. Presented at the Columbia University Mailman School of Public Health Lerner Center for Health Promotion, New York, NY.
-
-- Leung, T., Zeng, G., Maylott, S., Martinez, S., McNamara, E., Sanchez, C., **Clemente, E.**, Perez Pachon, J., Jakobsen, K., & Simpson, E. (2022). Infection detection in faces: Children’s development of pathogen avoidance. Poster presented at the Undergraduate Research, Creativity, and Innovation Forum, University of Miami.
 
 ## University Involvement
 

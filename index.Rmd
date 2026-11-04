@@ -19,9 +19,9 @@ Alongside my research, I create under the name Saint Manu, working across visual
 
 :::: {.panes}
 ::: {.pane}
-[01 // Academic & Professional]{.pane-index}
+[01 // Academic]{.pane-index}
 
-### [Research & Experience](resume.html)
+### [Research & Academic Experience](resume.html)
 
 (insert one-line description here.)
 :::

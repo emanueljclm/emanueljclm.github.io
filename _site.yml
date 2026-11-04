@@ -4,9 +4,9 @@ navbar:
   type: inverse
   title: "Emanuel Clemente"
   left: 
-    - text: "Resume"
+    - text: "Academic Work"
       href: resume.html
-    - text: "Saint Manu"
+    - text: "Creative Work"
       href: saint_manu/index.html
   right:
     - icon: fa-envelope fa-lg
