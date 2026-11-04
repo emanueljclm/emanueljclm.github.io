@@ -8,8 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,600;0,800;0,900;1,400&family=Syne:wght@400;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="portfolio-style.css">
+<link rel="stylesheet" href="portfolio_style.css">
 <style>
+
 /* Traditional-specific overrides */
 .trad-works{
   padding:5rem 3rem 0;
@@ -147,14 +148,14 @@
 <!-- HERO — Self Portrait as lead -->
 <section class="port-hero">
   <div class="hero-img">
-    <img src="works/traditional/self-portrait.jpg" alt="Self Portrait">
+    <img src="works/traditional/self_portrait.jpg" alt="Self Portrait">
     <div class="hero-img-overlay"></div>
   </div>
   <div class="hero-content">
     <div class="hero-left">
       <p class="hero-kicker reveal"><span class="hero-kicker-line"></span>Traditional Art · Saint Manu</p>
       <h1 class="hero-title reveal d1">Traditional</h1>
-      <p class="hero-sub reveal d2">Colored pencil, acrylic, and oil across seven years of practice. Portraiture, surrealism, and the spaces where they meet. A small archive that's waiting to grow again.</p>
+      <p class="hero-sub reveal d2">Colored pencil, acrylic, and oil across several years of practice. Portraiture, surrealism, and the spaces where they meet. A small archive that's waiting to grow again.</p>
     </div>
     <div class="hero-right reveal d2">
       <p class="hero-feat-label">Featured Work</p>
@@ -174,7 +175,7 @@
   <!-- 1. Lost In Your Eyes — landscape, close crop -->
   <div class="trad-item landscape reveal" onclick="openLightbox(0)">
     <div class="trad-img-wrap">
-      <img src="works/traditional/lost-in-your-eyes.jpg" alt="Lost In Your Eyes">
+      <img src="works/traditional/lost_in_your_eyes.jpg" alt="Lost In Your Eyes">
     </div>
     <div class="trad-info">
       <div>
@@ -190,7 +191,7 @@
   <!-- 2. Reflections in Real Time — landscape, interior scene -->
   <div class="trad-item landscape reveal d1" onclick="openLightbox(1)">
     <div class="trad-img-wrap">
-      <img src="works/traditional/reflections-in-real-time.jpg" alt="Reflections in Real Time">
+      <img src="works/traditional/reflections_in_real_time.jpg" alt="Reflections in Real Time">
     </div>
     <div class="trad-info">
       <div>
@@ -206,7 +207,7 @@
   <!-- 3. Self Portrait — portrait orientation, split layout -->
   <div class="trad-item portrait reveal d2" onclick="openLightbox(2)">
     <div class="trad-img-wrap">
-      <img src="works/traditional/self-portrait.jpg" alt="Self Portrait">
+      <img src="works/traditional/self_portrait.jpg" alt="Self Portrait">
     </div>
     <div class="trad-info">
       <p class="trad-num">03</p>
@@ -222,7 +223,6 @@
 <div class="trad-more reveal">
   <div>
     <h2 class="more-headline">More<br><span style="-webkit-text-stroke:2px var(--paper);color:transparent;">Coming.</span></h2>
-    <p class="more-body">Seven years between the first piece and the last. The hands still know what to do — they just need a reason to pick the pencil back up. This site might be it.</p>
   </div>
   <div style="text-align:right;flex-shrink:0;">
     <div class="more-num">03</div>
@@ -236,7 +236,7 @@
     <a href="digital.html">Digital Design</a>
     <a href="photography.html">Photography</a>
   </nav>
-  <span class="port-footer-fine">© 2025 Saint Manu</span>
+  <span class="port-footer-fine">© 2026 Saint Manu</span>
 </footer>
 
 <!-- LIGHTBOX -->
@@ -258,9 +258,9 @@ const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.tar
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
 const works=[
-  {src:'works/traditional/lost-in-your-eyes.jpg',title:'Lost In Your Eyes',year:'2017'},
-  {src:'works/traditional/reflections-in-real-time.jpg',title:'Reflections in Real Time',year:'2020'},
-  {src:'works/traditional/self-portrait.jpg',title:'Self Portrait',year:'2020'},
+  {src:'works/traditional/lost_in_your_eyes.jpg',title:'Lost In Your Eyes',year:'2017'},
+  {src:'works/traditional/reflections_in_real_time.jpg',title:'Reflections in Real Time',year:'2020'},
+  {src:'works/traditional/self_portrait.jpg',title:'Self Portrait',year:'2020'},
 ];
 let current=0;
 function openLightbox(i){current=i;document.getElementById('lb-img').src=works[i].src;document.getElementById('lb-title').textContent=works[i].title;document.getElementById('lb-year').textContent=works[i].year;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}

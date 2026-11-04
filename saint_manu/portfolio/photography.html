@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,600;0,800;0,900;1,400&family=Syne:wght@400;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="portfolio-style.css">
+<link rel="stylesheet" href="portfolio_style.css">
 </head>
 <body>
 
@@ -26,14 +26,14 @@
 
 <section class="port-hero">
   <div class="hero-img">
-    <img src="works/photography/channel-orange.jpg" alt="Channel Orange">
+    <img src="works/photography/channel_orange.jpg" alt="Channel Orange">
     <div class="hero-img-overlay"></div>
   </div>
   <div class="hero-content">
     <div class="hero-left">
       <p class="hero-kicker reveal"><span class="hero-kicker-line"></span>Photography · Saint Manu</p>
       <h1 class="hero-title reveal d1">Photo<br><span style="color:var(--accent);">graphy</span></h1>
-      <p class="hero-sub reveal d2">A limited archive — portraits, documentary moments, and the quiet detail of everyday life. Shot before the pandemic stilled everything. Waiting to be picked back up.</p>
+      <p class="hero-sub reveal d2">A limited archive — portraits, documentary moments, and the quiet detail of everyday life. Shot before the pandemic stilled everything.</p>
     </div>
     <div class="hero-right reveal d2">
       <p class="hero-feat-label">Featured Work</p>
@@ -50,7 +50,7 @@
   </div>
 
   <div class="photo-full reveal" data-index="1" onclick="openLightbox(1)">
-    <img src="works/photography/natalie-at-sundown.JPG" alt="Nathalie at Sundown">
+    <img src="works/photography/nathalie_at_sundown.jpg" alt="Nathalie at Sundown">
     <div class="photo-full-overlay">
       <p class="ov-num">02 · Portrait</p>
       <h3 class="ov-title">Nathalie at Sundown</h3>
@@ -71,7 +71,7 @@
 <div class="photo-more reveal">
   <div>
     <h2 class="more-headline">More<br><span style="-webkit-text-stroke:2px var(--paper);color:transparent;">Coming.</span></h2>
-    <p class="more-body">The pandemic paused this practice. The eye is still there — it just needs a reason to pick the camera back up again. This site might be it.</p>
+    <p class="more-body">The pandemic paused this practice. The eye is still there; it just needs a reason to pick the camera back up again.</p>
   </div>
   <div style="text-align:right;flex-shrink:0;">
     <div class="more-num">03</div>
@@ -81,11 +81,12 @@
 
 <footer class="port-footer">
   <nav class="port-footer-nav">
-    <a href="../index.html">Home</a>
+    <a href="../index.html">Saint Manu</a>
     <a href="digital.html">Digital Design</a>
     <a href="traditional.html">Traditional Art</a>
+    <a href="../../index.html">Emanuel Clemente (Main Site)</a>
   </nav>
-  <span class="port-footer-fine">© 2025 Saint Manu</span>
+  <span class="port-footer-fine">© 2026 Saint Manu</span>
 </footer>
 
 <div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
@@ -106,15 +107,25 @@ const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.tar
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
 const works=[
-  {src:'works/photography/channel-orange.jpg',title:'Channel Orange',year:'2020'},
-  {src:'works/photography/natalie-at-sundown.JPG',title:'Nathalie at Sundown',year:'2019'},
+  {src:'works/photography/channel_orange.jpg',title:'Channel Orange',year:'2020'},
+  {src:'works/photography/nathalie_at_sundown.jpg',title:'Nathalie at Sundown',year:'2019'},
   {src:'works/photography/suburbanite.jpg',title:'Suburbanite',year:'2019'},
 ];
 let current=0;
 function openLightbox(i){current=i;document.getElementById('lb-img').src=works[i].src;document.getElementById('lb-title').textContent=works[i].title;document.getElementById('lb-year').textContent=works[i].year;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
 function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
 function shiftLightbox(dir){current=(current+dir+works.length)%works.length;openLightbox(current);}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();if(e.key==='ArrowRight')shiftLightbox(1);if(e.key==='ArrowLeft')shiftLightbox(-1);});
+document.addEventListener('keydown',e=>{
+  if(!document.getElementById('lightbox').classList.contains('open'))return;
+  if(e.key==='Escape')closeLightbox();
+  if(e.key==='ArrowRight')shiftLightbox(1);
+  if(e.key==='ArrowLeft')shiftLightbox(-1);
+});
+document.querySelectorAll('.photo-full, .photo-diptych').forEach(el=>{
+  const i=parseInt(el.dataset.index);
+  el.tabIndex=0;el.setAttribute('role','button');
+  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLightbox(i);}});
+});
 document.querySelector('.port-hero').addEventListener('click',()=>openLightbox(0));
 document.querySelector('.port-hero').style.cursor='pointer';
 </script>
