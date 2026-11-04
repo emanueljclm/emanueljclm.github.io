@@ -1,3 +1,4 @@
+::: {.resume}
 ---
 title: "Academic Work and Experience"
 ---
@@ -5,36 +6,104 @@ title: "Academic Work and Experience"
 ## Education
 
 ### Columbia University Mailman School of Public Health
+[MPH ‧ Sociomedical Sciences, New York, NY]{.org} [Expected May 2027]{.date}
+[Public Health Research Methods Certificate]
 
 ### University of Miami College of Arts & Sciences
+[BA ‧ Psychology & Political Science, Coral Gables, FL]{.org} [May 2024]{.date}
+[Public Health Minor]
 
 ## Work Experience
 
 ### Columbia University Mailman School of Public Health, Office of the Dean
+[FORWARD Fellow, New York, NY]{.org} [Sept 2026 – Present]{.date}
+
+- Partner with the Office of the Dean to disseminate and implement inclusive meeting protocols across Columbia Mailman academic departments and administrative units, building on prior Fellows’ research
+- Propose implementation strategies and evaluate project impact to advance equity-oriented institutional change, with findings to be presented at the 2027 Columbia Mailman Equity Symposium
+- Participate in monthly cohort capacity-building sessions led by School leadership on organizational change management, social movements, and service-based learning
+
 ### Arthur Ashe Institute for Urban Health
+[Research Mentor, New York, NY]{.org} [July 2026 – Present]{.date}
+
+- Conduct a mixed-methods evaluation of the Institute’s youth development pipeline programs, analyzing up to seven years of pre/post survey data to assess career and workforce development outcomes
+- Mentored a cohort of five high school students through a four-week community-engaged research project evaluating the Brooklyn Communities Collaborative (BCC) Maternal Health Program, guiding them across the full applied research cycle from literature review to dissemination 
+- Co-developed qualitative data collection instruments and data-management structures to assess participants’ maternal health knowledge, healthcare access, and overall well-being 
+- Coached students in synthesizing findings into action-oriented recommendations and communicating results through poster and oral presentations at the program’s closing ceremony
+
 ### Region 2 Public Health Training Center
+[Graduate Research Assistant, New York, NY]{.org} [Oct 2025 – April 2026]{.date}
+
+- Supported formative evaluation of a federally funded public health leadership training program by collecting,  cleaning, and organizing 2025–2026 survey and attendance data to assess training reach and engagement
+- Designed and administered Qualtrics surveys and standardized occupational and demographic data from attendance reports to support tracking, evaluation, and assessment of regional workforce training needs
+- Coordinated data management and synthesized county-level demographic and health data across New York, New Jersey, Puerto Rico, and the U.S. Virgin Islands into project narratives and funder-facing reports 
+
 ### University of Miami Miller School of Medicine, Department of Public Health Sciences
+[Graduate Student Assistant of Admissions, Miami, FL]{.org} [Mar 2022 – Mar 2024]{.date}
+
+- Provided administrative support for admissions, enrollment, and academic affairs for 480+ students across the department’s graduate programs, including scheduling and cross-unit coordination
+- Maintained student records and supported services planning using Microsoft Excel and FileMaker Pro, ensuring data completeness and accuracy 
+- Curated departmental digital content to engage prospective students across two admissions cycles
+
 ### Institute for Advanced Study of the Americas, University of Miami
+[Undergraduate Research Assistant, Coral Gables, FL]{.org} [Jul 2023 – Dec 2023]{.date}
+
+- Conducted structured literature reviews on maternal and reproductive health, health systems reform, and universal health coverage in low- and middle-income countries 
+- Synthesized findings into comparative analytic summaries for manuscripts and research presentations
+- Contributed to research outputs examining access to palliative care, reproductive health services, and health system performance across the Americas 
+
 ### Statecraft Digital Marketing Firm
+[Marketing Intern, Miami, FL]{.org} [Sept 2022 – Nov 2022]{.date}
+
+- Analyzed grassroots fundraising and campaign data to identify trends in contributions and expenditures, supporting data-informed decision-making 
+- Designed Adobe Suite content to expand social media reach for 15 candidates in the 2022 U.S. midterms
+
 ### University of Miami Department of Psychology, Social Cognition Laboratory
+[Undergraduate Researcher, Coral Gables, FL]{.org} [Jun 2021 – May 2022]{.date}
+
+- Performed detailed behavioral coding and quantification of 470+ audiovisual files using CARMA and SPSS to support analyses of neonatal imitation, emotional valence, and early social cognition
+- Prepared SPSS data visualizations summarizing experimental results for research dissemination
+- Conducted literature reviews on infant salivary oxytocin and cortisol in psychophysiological development
 
 ## Teaching Experience
 
 ### Columbia University Mailman School of Public Health
+[Teaching Assistant, Determinants of Health]{.org} [Sept 2026 – Present]{.date}
+
+[Teaching Assistant, Integration of Science & Practice I]{.org} [Sept 2026 – Present]{.date}
+
 ### University of Miami School of Nursing and Health Studies
+[Teaching Assistant, Effective Responses to Hemispheric Challenges in Global Health]{.org} [Dec 2023 – May 2024]{.date}
 
 ## Volunteer Experience
 
 ### Strengthening Health with Innovation and Engagement (SHINE) Research Program
+[Undergraduate Research Volunteer, Miami, FL]{.org} [Aug 2021 – May 2022]{.date}
+
+- Contributed to community-based research across NIMH-funded studies (WAVE-TW; Five Point Initiative EHE Planning Supplement) investigating psychosocial and structural determinants of health disparities, HIV prevention, and resilience 
+- Managed confidential participant records and human-subjects data in REDCap under IRB-approved protocols, ensuring data integrity 
+- Conducted community outreach to recruit sexual and gender minority participants during the 2022 Miami Beach Pride Parade 
 
 ## Selected Research & Presentations
+
+### Clemente, E. (2026). Identifying service deserts at the intersection of incarceration & substance use risk. Columbia University Mailman School of Public Health, Department of Environmental Health Sciences.
+
+### Clemente, E., Quintana Licona, D., & Rajput, A. (2026). The “Policy as Medicine” web hub: A social justice resource for clinicians servicing immigrant populations in New York City. Presented at the Columbia University Mailman School of Public Health Lerner Center for Health Promotion, New York, NY.
+
+### Leung, T., Zeng, G., Maylott, S., Martinez, S., McNamara, E., Sanchez, C., Clemente, E., Perez Pachon, J., Jakobsen, K., & Simpson, E. (2022). Infection detection in faces: Children’s development of pathogen avoidance. Poster presented at the Undergraduate Research, Creativity, and Innovation Forum, University of Miami.
 
 ## University Involvement
 
 ### Mailman Black & Latinx Student Caucus
+[Communications Manager]{.org} [Apr 2026 - Present]{.date}
+
 ### Columbia University Senate
+[Mailman School of Public Health Senator]{.org} [Oct 2025 - Present]{.date}
+
 ### University of Miami Student Government
+[Commuter Senator ‧ University Affairs Senate Committee Chair]{.org} [February 2023 - May 2024]{.date}
+
 ### University of Miami United Black Students
+[Public Relations & Marketing Co-Chair]{.org} [Oct 2021 - Feb 2023]{.date}
 
 ## Skills
 
@@ -45,3 +114,5 @@ title: "Academic Work and Experience"
 ### Web Development
 ### Research Methods
 ### Languages
+
+:::

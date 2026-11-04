@@ -1,7 +1,4 @@
----
-title: "Emanuel Clemente"
----
-
-### I have a webpage!
-
-And I can put all kinds of stuff on it!
+::: {.hero}
+# Emanuel Clemente
+[MPH Candidate · Sociomedical Sciences · Columbia Mailman]{.eyebrow}
+:::
