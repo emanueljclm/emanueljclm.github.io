@@ -448,7 +448,7 @@ h1.title {
 .project-thumb {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: top;
   margin-bottom: 1.25rem;
@@ -457,8 +457,40 @@ h1.title {
   transition: filter .4s;
 }
 
+/* Zoom cursor on clickable images */
+.project a .project-thumb {
+  cursor: zoom-in;
+}
+
 .project:hover .project-thumb {
   filter: saturate(1);
+}
+
+/* Browser-window frame around a website screenshot */
+.browser-frame {
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--page-rule);
+  border-top: none;
+}
+
+.browser-frame::before {
+  content: '● ● ●';
+  display: block;
+  padding: .3rem .6rem;
+  background: var(--near-black);
+  color: rgba(240, 232, 220, .35);
+  font-size: .5rem;
+  letter-spacing: .3em;
+}
+
+/* The frame already has spacing and a border, so remove the image's own */
+.browser-frame .project-thumb {
+  margin-bottom: 0;
+  border: none;
+}
+
+.browser-frame p {
+  margin: 0;
 }
 
 /* Hides auto-captions if fig_caption is still on in _site.yml */

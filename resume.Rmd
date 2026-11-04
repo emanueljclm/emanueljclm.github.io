@@ -7,7 +7,8 @@ title: "Academic Work and Experience"
 
 :::: {.projects}
 ::: {.project}
-![Analysis of harm reduction service deserts across New York State counties](images/projects/service_deserts_map.jpg){.project-thumb}
+[![Research poster analyzing harm reduction service deserts across New York State counties](images/projects/service_deserts_map.jpg){.project-thumb}](images/projects/service_deserts_map.jpg){target="_blank"}
+
 [Spatial Analysis · Mar 2026]{.project-meta}
 
 ### Identifying Service Deserts at the Intersection of Incarceration & Substance Use Risk
@@ -32,7 +33,7 @@ As immigration enforcement shifts, clinicians caring for undocumented, mixed-sta
 :::
 
 ::: {.project}
-![Program Evaluation of the BCC Maternal Health Program](images/projects/aaiuh_bcc_evaluation_poster.jpg){.project-thumb}
+[![Research poster presenting the evaluation of the BCC Maternal Health Program](images/projects/aaiuh_bcc_evaluation_poster.jpg){.project-thumb}](images/projects/aaiuh_bcc_evaluation_poster.jpg){target="_blank"}
 
 [Applied Practice Experience · July 2026]{.project-meta}
 
