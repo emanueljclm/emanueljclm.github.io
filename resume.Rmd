@@ -1,0 +1,161 @@
+---
+title: "Academic Work and Experience"
+---
+::: {.resume}
+
+## Research Projects
+
+:::: {.projects}
+::: {.project}
+[![Research poster analyzing harm reduction service deserts across New York State counties](images/projects/service_deserts_map.jpg){.project-thumb}](images/projects/service_deserts_map.jpg){target="_blank"}
+
+[Spatial Analysis · Mar 2026]{.project-meta}
+
+### Identifying Service Deserts at the Intersection of Incarceration & Substance Use Risk
+
+Do New York State counties with higher incarceration and overdose mortality have less geographic access to harm reduction services? Using county-level data from 2019 to 2023, I mapped overdose mortality, jail populations, and distance to the nearest syringe service or opioid treatment program in R, combining bivariate and trivariate choropleth maps with spatial statistics. I found that 40 of New York’s 62 counties have no identified syringe service or opioid treatment program, with the most critical service deserts concentrated in rural upstate communities.
+
+[Columbia Mailman, Department of Environmental Health Sciences]{.project-source}
+:::
+
+::: {.project}
+::: {.browser-frame}
+[![Homepage of the Policy as Medicine web hub](images/projects/pam_website.jpg){.project-thumb}](https://pam-nyc.netlify.app/)
+:::
+
+[Online Web Resource · Apr 2026]{.project-meta}
+
+### The “Policy as Medicine” Web Hub: A Social Justice Resource for Clinicians Servicing Immigrant Populations in New York City
+
+As immigration enforcement shifts, clinicians caring for undocumented, mixed-status, and asylum-seeking patients need to know both their own obligations and their patients’ rights. With two colleagues, I co-created Policy as Medicine for a health messaging competition: a single web platform that compiles medical-legal resources for New York City clinicians, from ICE response protocols and patient protections under EMTALA and HIPAA to coverage programs, legal referrals, and a weekly policy tracker. The hub also offers downloadable pocket cards summarizing clinicians’ obligations, so providers can advocate for immigrant patients at the point of care.
+
+[Columbia Mailman, Lerner Center for Health Promotion]{.project-source}
+:::
+
+::: {.project}
+[![Research poster presenting the evaluation of the BCC Maternal Health Program](images/projects/aaiuh_bcc_evaluation_poster.jpg){.project-thumb}](images/projects/aaiuh_bcc_evaluation_poster.jpg){target="_blank"}
+
+[Applied Practice Experience · July 2026]{.project-meta}
+
+### Evaluating the Brooklyn Communities Collaborative (BCC) Maternal Health Program: A Community-Engaged Qualitative Study
+
+How does the Brooklyn Communities Collaborative’s Maternal Health Program shape mothers’ health knowledge, access to care, and well-being? I mentored five high school researchers through a community-engaged qualitative study, guiding them from literature review through focus groups and key informant interviews to thematic analysis and dissemination. The team found that mothers valued continuous, community-based support over fragmented clinical care, while gaps remained in postpartum recovery, C-section care, and mental health support.
+
+[Arthur Ashe Institute for Urban Health, Brooklyn Health Promotion Summer Internship Program]{.project-source}
+
+:::
+
+::::
+
+## Education
+
+### Columbia University Mailman School of Public Health
+[MPH ‧ Sociomedical Sciences, New York, NY]{.role} [Expected May 2027]{.date}
+[Public Health Research Methods Certificate]{.note}
+
+### University of Miami College of Arts & Sciences
+[BA ‧ Psychology & Political Science, Coral Gables, FL]{.role} [Aug 2024]{.date}
+[Public Health Minor]{.note}
+
+## Work Experience
+
+### Columbia University Mailman School of Public Health, Office of the Dean
+[FORWARD Fellow, New York, NY]{.role} [Sept 2026 -- Present]{.date}
+
+- Partner with the Office of the Dean to disseminate and implement inclusive meeting protocols across Columbia Mailman academic departments and administrative units, building on prior Fellows’ research
+- Propose implementation strategies and evaluate project impact to advance equity-oriented institutional change, with findings to be presented at the 2027 Columbia Mailman Equity Symposium
+- Participate in monthly cohort capacity-building sessions led by School leadership on organizational change management, social movements, and service-based learning
+
+### Arthur Ashe Institute for Urban Health
+[Research Mentor, New York, NY]{.role} [Jul 2026 -- Present]{.date}
+
+- Conduct a mixed-methods evaluation of the Institute’s youth development pipeline programs, analyzing up to seven years of pre/post survey data to assess career and workforce development outcomes
+- Mentored a cohort of five high school students through a four-week community-engaged research project evaluating the Brooklyn Communities Collaborative (BCC) Maternal Health Program, guiding them across the full applied research cycle from literature review to dissemination 
+- Co-developed qualitative data collection instruments and data-management structures to assess participants’ maternal health knowledge, healthcare access, and overall well-being 
+- Coached students in synthesizing findings into action-oriented recommendations and communicating results through poster and oral presentations at the program’s closing ceremony
+
+### Region 2 Public Health Training Center
+[Graduate Research Assistant, New York, NY]{.role} [Oct 2025 -- Apr 2026]{.date}
+
+- Supported formative evaluation of a federally funded public health leadership training program by collecting,  cleaning, and organizing 2025–2026 survey and attendance data to assess training reach and engagement
+- Designed and administered Qualtrics surveys and standardized occupational and demographic data from attendance reports to support tracking, evaluation, and assessment of regional workforce training needs
+- Coordinated data management and synthesized county-level demographic and health data across New York, New Jersey, Puerto Rico, and the U.S. Virgin Islands into project narratives and funder-facing reports 
+
+### University of Miami Miller School of Medicine, Department of Public Health Sciences
+[Graduate Student Assistant of Admissions, Miami, FL]{.role} [Mar 2022 -- Mar 2024]{.date}
+
+- Provided administrative support for admissions, enrollment, and academic affairs for 480+ students across the department’s graduate programs, including scheduling and cross-unit coordination
+- Maintained student records and supported services planning using Microsoft Excel and FileMaker Pro, ensuring data completeness and accuracy 
+- Curated departmental digital content to engage prospective students across two admissions cycles
+
+### Institute for Advanced Study of the Americas, University of Miami
+[Undergraduate Research Assistant, Coral Gables, FL]{.role} [Jul 2023 -- Dec 2023]{.date}
+
+- Conducted structured literature reviews on maternal and reproductive health, health systems reform, and universal health coverage in low- and middle-income countries 
+- Synthesized findings into comparative analytic summaries for manuscripts and research presentations
+- Contributed to research outputs examining access to palliative care, reproductive health services, and health system performance across the Americas 
+
+### Statecraft Digital Marketing Firm
+[Marketing Intern, Miami, FL]{.role} [Sept 2022 -- Nov 2022]{.date}
+
+- Analyzed grassroots fundraising and campaign data to identify trends in contributions and expenditures, supporting data-informed decision-making 
+- Designed Adobe Suite content to expand social media reach for 15 candidates in the 2022 U.S. midterms
+
+### University of Miami Department of Psychology, Social Cognition Laboratory
+[Undergraduate Researcher, Coral Gables, FL]{.role} [Jun 2021 -- May 2022]{.date}
+
+- Performed detailed behavioral coding and quantification of 470+ audiovisual files using CARMA and SPSS to support analyses of neonatal imitation, emotional valence, and early social cognition
+- Prepared SPSS data visualizations summarizing experimental results for research dissemination
+- Conducted literature reviews on infant salivary oxytocin and cortisol in psychophysiological development
+
+## Teaching Experience
+
+### Columbia University Mailman School of Public Health
+[Teaching Assistant, Determinants of Health]{.role} [Sept 2026 -- Present]{.date}
+
+- Support instruction for a required MPH Core studio examining the biological, environmental, and social determinants of population health, providing in-lecture support and holding weekly office hours
+- Evaluate group projects and in-person presentations for two learning groups (eight teams, 40 students) in which students translate studio concepts for community and non-public health audiences
+- Develop supplemental recap notes that organize lecture and reading concepts into tables and diagrams
+
+[Teaching Assistant, Integration of Science & Practice I]{.role} [Sept 2026 -- Present]{.date}
+
+- Support a faculty instructor in leading weekly case-based seminars where first-year MPH students take on interest-group and policymaker roles to analyze cases such as the Kennedy Krieger lead study
+- Grade written deliverables, including briefing notes and vaccine campaign strategic plans, and assess participation against a class-developed rubric with written feedback 
+- Serve as a first point of contact for students on attendance, make-up reflections, and course expectations
+
+### University of Miami School of Nursing and Health Studies
+[Teaching Assistant, Effective Responses to Hemispheric Challenges in Global Health]{.role} [Dec 2023 -- May 2024]{.date}
+
+## Volunteer Experience
+
+### Strengthening Health with Innovation and Engagement (SHINE) Research Program
+[Undergraduate Research Volunteer, Miami, FL]{.role} [Aug 2021 -- May 2022]{.date}
+
+- Contributed to community-based research across NIMH-funded studies (WAVE-TW; Five Point Initiative EHE Planning Supplement) investigating psychosocial and structural determinants of health disparities, HIV prevention, and resilience 
+- Managed confidential participant records and human-subjects data in REDCap under IRB-approved protocols, ensuring data integrity 
+- Conducted community outreach to recruit sexual and gender minority participants during the 2022 Miami Beach Pride Parade 
+
+## University Involvement
+
+### Mailman Black & Latinx Student Caucus
+[Communications Manager]{.role} [Apr 2026 -- Present]{.date}
+
+### Columbia University Senate
+[Mailman School of Public Health Senator]{.role} [Oct 2025 -- Present]{.date}
+
+### University of Miami Student Government
+[Commuter Senator ‧ University Affairs Senate Committee Chair]{.role} [Feb 2023 -- May 2024]{.date}
+
+### University of Miami United Black Students
+[Public Relations & Marketing Co-Chair]{.role} [Oct 2021 -- Feb 2023]{.date}
+
+## Skills
+
+- **Software & Productivity:** Microsoft Office (Word, Excel, PowerPoint, Teams), Google Workspace, Asana
+- **Data Analysis & Visualization:** R, Stata, SPSS
+- **Data Collection & Qualitative Analysis:** Qualtrics, REDCap, Dedoose
+- **Geospatial Analysis:** QGIS, GeoDa, SaTScan, R
+- **Web Development:** HTML, CSS, JavaScript
+- **Research Methods:** Program evaluation and implementation, quantitative and qualitative analysis, primary and secondary data analysis, in-depth interviewing and surveying, systematic and scoping literature reviews
+- **Languages:** English (native), Spanish (intermediate proficiency)
+:::
