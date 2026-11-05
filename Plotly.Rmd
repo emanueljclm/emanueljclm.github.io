@@ -1,0 +1,47 @@
+---
+title: "plotly"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## Analyzing NOAA Data Across New York State
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(dplyr)
+```
+
+```{r}
+data("ny_noaa")
+
+ny_noaa_df = 
+  ny_noaa |> 
+  janitor::clean_names() |> 
+  mutate(
+    year = year(date),
+    month = month(date, label = TRUE),
+    prcp = prcp / 10,
+    tmax = as.numeric(tmax) / 10,
+    tmin = as.numeric(tmin) / 10) |>
+  filter(year >= 2001)
+
+set.seed(1)
+
+ny_noaa_sample =
+  ny_noaa_df |>
+  slice_sample(n = 3000)
+```
+
+## Plotly Scatterplot
+
+```{r}
+ny_noaa_sample |>
+  plot_ly(
+    x = ~tmax, y = ~tmin, type = "scatter", mode = "markers", color = ~month, alpha = 0.5)
+```
