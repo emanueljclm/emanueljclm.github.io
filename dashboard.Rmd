@@ -1,0 +1,90 @@
+---
+title: "Analyzing NOAA Weather Data Across New York State, 2001–2010"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    navbar:
+      - { title: "Home", href: "index.html", align: left }
+---
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+```
+
+```{r}
+data("ny_noaa")
+
+ny_noaa_df = 
+  ny_noaa |> 
+  janitor::clean_names() |> 
+  mutate(
+    year = year(date),
+    month = month(date, label = TRUE),
+    prcp = prcp / 10,
+    tmax = as.numeric(tmax) / 10,
+    tmin = as.numeric(tmin) / 10) |>
+  filter(year >= 2001)
+
+set.seed(1)
+
+ny_noaa_sample =
+  ny_noaa_df |>
+  drop_na(tmax, tmin) |>
+  slice_sample(n = 3000)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Daily Maximum vs. Minimum Temperature, NY Weather Stations (2001–2010)
+
+```{r}
+ny_noaa_sample |>
+  plot_ly(
+    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers", color = ~month, alpha = 0.5, colors = "viridis") |>
+  layout(
+    xaxis = list(title = "Minimum Temperature (°C)"),
+    yaxis = list(title = "Maximum Temperature (°C)")
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Daily Snowfall on Snowy Days by Month, NY (2001–2010)
+
+```{r}
+set.seed(1)
+
+ny_noaa_df |>
+  filter(snow > 0) |>
+  slice_sample(n = 3000) |>
+  plot_ly(
+    x = ~month, y = ~snow, color = ~month, type = "box", colors = "viridis") |>
+  layout(
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Snowfall (mm, log scale)", type = "log"),
+    showlegend = FALSE)
+```
+
+{data-width=650}
+-----------------------------------------------------------------------
+
+### Average Daily Precipitation by Month, NY (2001–2010)
+
+```{r}
+ny_noaa_df |>
+  group_by(month) |>
+  summarize(mean_prcp = mean(prcp, na.rm = TRUE)) |>
+  plot_ly(
+    x = ~month, y = ~mean_prcp, color = ~month, type = "bar", colors = "viridis") |>
+  layout(
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Precipitation (mm)"),
+    showlegend = FALSE)
+```
