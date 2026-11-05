@@ -8,6 +8,8 @@ navbar:
       href: resume.html
     - text: "Creative Work"
       href: saint_manu/index.html
+    - text: "NY NOAA Dashboard"
+      href: dashboard.html
   right:
     - icon: fa-envelope fa-lg
       href: mailto:emanueljoclemente@gmail.com

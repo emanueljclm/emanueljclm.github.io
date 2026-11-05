@@ -656,6 +656,27 @@ footer {
   color: rgba(240, 232, 220, .4);
 }
  
+/* ── DASHBOARD ── */
+
+/* Chart panels: flat cards with thin rules instead of rounded gray boxes */
+.chart-wrapper {
+  background: var(--page-bg);
+  border: 1px solid var(--page-rule);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Panel titles, styled like the resume section labels */
+.chart-title {
+  font-family: var(--f-ui);
+  font-weight: 700;
+  font-size: .7rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: transparent;
+  border-bottom: 1px solid var(--accent-rule);
+}
  
 /* ── MOBILE ── */
 @media (max-width: 860px) {
