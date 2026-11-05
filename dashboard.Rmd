@@ -2,7 +2,7 @@
 title: "Analyzing NOAA Weather Data Across New York State, 2001–2010"
 output:
   flexdashboard::flex_dashboard:
-    orientation: columns
+    orientation: rows
     vertical_layout: fill
     theme: flatly
     css: styles.css
@@ -40,7 +40,7 @@ ny_noaa_sample =
   slice_sample(n = 3000)
 ```
 
-Column {data-width=650}
+Row {data-height=550}
 -----------------------------------------------------------------------
 
 ### Daily Maximum vs. Minimum Temperature, NY Weather Stations (2001–2010)
@@ -55,8 +55,8 @@ ny_noaa_sample |>
   )
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
+Row {data-height=450}
+------------------------------------------------------------------------
 
 ### Daily Snowfall on Snowy Days by Month, NY (2001–2010)
 
@@ -74,7 +74,6 @@ ny_noaa_df |>
     showlegend = FALSE)
 ```
 
-{data-width=650}
 -----------------------------------------------------------------------
 
 ### Average Daily Precipitation by Month, NY (2001–2010)
