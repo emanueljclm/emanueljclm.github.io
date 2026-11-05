@@ -35,13 +35,47 @@ set.seed(1)
 
 ny_noaa_sample =
   ny_noaa_df |>
+  drop_na(tmax, tmin) |>
   slice_sample(n = 3000)
 ```
 
-## Plotly Scatterplot
+{data-width=650}
+-----------------------------------------------------------------------
+
+### Daily Maximum vs. Minimum Temperature, NY Weather Stations (2001–2010)
 
 ```{r}
 ny_noaa_sample |>
   plot_ly(
-    x = ~tmax, y = ~tmin, type = "scatter", mode = "markers", color = ~month, alpha = 0.5)
+    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers", color = ~month, alpha = 0.5) |>
+  layout(
+    title = "Daily Maximum vs. Minimum Temperature",
+    xaxis = list(title = "Minimum Temperature (°C)"),
+    yaxis = list(title = "Maximum Temperature (°C)")
+  )
 ```
+
+{data-width=650}
+-----------------------------------------------------------------------
+
+### Daily Snowfall on Snowy Days by Month, NY (2001–2010)
+
+```{r}
+set.seed(1)
+
+ny_noaa_df |>
+  filter(snow > 0) |>
+  slice_sample(n = 3000) |>
+  plot_ly(
+    x = ~month, y = ~snow, color = ~month, type = "box", colors = "viridis") |>
+  layout(
+    title = "Daily Snowfall on Snowy Days by Month",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Snowfall (mm, log scale)", type = "log"),
+    showlegend = FALSE)
+```
+
+{data-width=650}
+-----------------------------------------------------------------------
+
+### Daily Snowfall on Snowy Days by Month, NY (2001–2010)
